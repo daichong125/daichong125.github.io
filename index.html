@@ -65,6 +65,96 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-My-New-Post-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/25/My-New-Post-1/" class="article-date">
+  <time datetime="2015-08-25T13:21:00.000Z" itemprop="datePublished">2015-08-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/25/My-New-Post-1/">java学习笔记-2-java编程规范</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h5 id="命名">命名</h5><ol>
+<li><p>包命名：按照域名的范围从大到小依次列出，恰好和Internet上域名的命名规则相反。包名由一组以“.”连接的标识符构成，通常，第一个标识符为符合网络域名的两个或三个英文小写字母，例如org.javaTest。</p>
+</li>
+<li><p>类、接口命名：类的名字必须由大写字母开头，且单词的其他字母均小写。如果类名由多个单词组成，则每个单词的首字母均大写，有缩写时，缩写词每个字母均大写，且类名应尽量选择名词。</p>
+</li>
+<li><p>方法名：方法名的第一个单词应以小写字母开头，后面的单词则用大写字母开头，可以为动词或“动词+名词”的组合。</p>
+<ul>
+<li><p>设置/获取某个值的Method，应该遵循setV/getV规范，例如“getData（）;”。</p>
+</li>
+<li><p>返回长度的Method，应该命名为length，例如“length（）；”。</p>
+</li>
+<li><p>测试某个布尔值得Method，应该命名为isVS，例如“isReady（）；”。</p>
+</li>
+<li><p>将对象转换为某个特定类型的Method，应该命名为toF，例如“toOracleFormat（）；”。</p>
+</li>
+</ul>
+</li>
+<li><p>变量名：局部变量、方法参数的命名应该采用首字母小写，其他变量字母大写的方式；final static 变量的名字应该都大写，并指出完整意义，且以下划线分隔这些单词；常量取代数字、固定字符串。</p>
+</li>
+</ol>
+<p>索引变量：i、j、k等只能作为小型循环的循环索引变量。</p>
+<p>逻辑变量：避免用 flag 来命名状态变量、用 is 来命名逻辑变量。</p>
+<h5 id="注释">注释</h5><pre><code>// 为行注释，即注释只能写在一行；
+
+/<span class="keyword">*</span> ... <span class="keyword">*</span>/可以将一段比较长的注释包含进去，即支持多行注释；
+
+以 /<span class="keyword">*</span><span class="keyword">*</span> 开始，以 <span class="keyword">*</span>/ 结束的自动生成专业水准的文档注释，它可以将代码和文档保存在一个地方。
+</code></pre><ol>
+<li><p>类注释：必须放在 import 语句之后、类定义之前，可以生成类的相关文档。</p>
+</li>
+<li><p>方法注释： 每一个方法的注释都必须放在所描述的方法之前。</p>
+</li>
+<li><p>域注释：只需要对公共域（通常指的是静态变量）建立文档。</p>
+</li>
+<li><p>通用注释：</p>
+</li>
+</ol>
+<ul>
+<li><p>@author name 这个标记将产生一个作者条目。</p>
+</li>
+<li><p>@version text 这个标记将产生一个版本条目。</p>
+</li>
+<li><p>@since text 这个标记将产生一个始于条目。</p>
+</li>
+<li><p>@deprecate text 这个标记将对类，方法或变量添加一个不再使用的注释。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/08/25/My-New-Post-1/" data-id="cidre25d40000q8mkcxmhzvlc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-My-New-Post" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/08/18/My-New-Post/" class="article-date">
@@ -92,7 +182,6 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<hr>
 <h5 id="下载_jdk_并完成安装">下载 jdk 并完成安装</h5><p><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">下载地址</a></p>
 <p>jdk（java开发包或java开发工具，java Development Kit），针对不同的操作系统和位数（32位/64位）有不同的版本，对应自己电脑选择不同版本的jdk下载并安装。<br><img src="http://i1.tietuku.com/763626e000296d1e.png" alt=""><br>以我的电脑为例：windows 64位操作系统，对应下载如下图：</p>
 <p><img src="http://i1.tietuku.com/1ebb4f83a6dab568.png" alt=""></p>
@@ -146,7 +235,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/08/18/My-New-Post/" data-id="cidrdn4an0000dcmk1ohnwlls" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/08/18/My-New-Post/" data-id="cidre25ek0006q8mkj72yxjwp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
@@ -193,7 +282,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/08/18/hello-world/" data-id="cidrdn4bv0005dcmkb82846ae" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/08/18/hello-world/" data-id="cidre25eb0005q8mkho67jubd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -212,7 +301,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -221,7 +310,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -239,7 +328,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -249,6 +338,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/08/25/My-New-Post-1/">java学习笔记-2-java编程规范</a>
+          </li>
         
           <li>
             <a href="/2015/08/18/My-New-Post/">java学习笔记-java环境搭载</a>
